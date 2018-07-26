@@ -47,7 +47,7 @@ body{
 .container{
 	width: 100%;
 	max-width: 800px;
-	background: #d9d9d9;
+	background: #ccc;
 	min-height: 300px;
 	margin: 0 auto;
 }
@@ -55,4 +55,13 @@ body{
 .rodape{
 	height: 100px;
 	background: #ddd;
+}
+
+.produto{
+	width: 180px;
+	height: 230px;
+	background: #eeeeee;
+	float: left;
+	margin: 10px;
+	text-align: center;
 }

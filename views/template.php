@@ -11,12 +11,12 @@
 	<div class="menu">
 		<div class="menuint">
 			<ul>
-				<a href="/"><li>Home</li></a>
-				<a href="/empresa"><li>Empresa</li></a>
+				<a href="<?php echo BASE_URL;?>"><li>Home</li></a>
+				<a href="<?php echo BASE_URL;?>empresa"><li>Empresa</li></a>
 				<?php foreach($menu as $menuitem): ?>
-				<a href="/categorias/ver/<?php echo $menuitem['id']; ?>"><li><?php echo $menuitem['titulo']; ?></li></a>
+				<a href="<?php echo BASE_URL;?>categoria/ver/<?php echo $menuitem['id']; ?>"><li><?php echo $menuitem['titulo']; ?></li></a>
 				<?php endforeach; ?>
-				<a href="/contato"><li>Contato</li></a>
+				<a href="<?php echo BASE_URL;?>contato"><li>Contato</li></a>
 			</ul>
 		</div>
 	</div>

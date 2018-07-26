@@ -1,4 +1,6 @@
 <?php
+include '/functions/querysController.php';
+
 class controller{
 
 	protected $db;
@@ -17,13 +19,8 @@ class controller{
 	}
 
 	public function loadTemplate($viewName, $viewData = array()){
-		$sql = "SELECT * FROM categorias";
-		$sql = $this->db->query($sql);
-
-		$menu = array();
-		if($sql->rowCount() > 0){
-			$menu = $sql->fetchAll();
-		}
+		$querys = new Querys();
+		$menu = $querys->listCatego();
 		require 'views/template.php';
 	}
 
