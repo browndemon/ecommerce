@@ -1,1 +1,4 @@
-<h1>Olá Mundo!</h1>
+<?php
+print_r($produtos);
+
+?>

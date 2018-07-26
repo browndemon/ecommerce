@@ -2,8 +2,9 @@
 class homeController extends controller{
 
 	public function index(){
-
-		$this->loadTemplate('home');
+		$produtos = new produtos();
+		$dados['produtos'] = $produtos->listarProdutos(2);
+		$this->loadTemplate('home', $dados);
 
 	}
 }
