@@ -11,4 +11,5 @@ class Querys extends controller{
 		}
 		return $array;
 	}
+
 }

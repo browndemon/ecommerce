@@ -18,6 +18,12 @@
 				<?php endforeach; ?>
 				<a href="<?php echo BASE_URL;?>contato"><li>Contato</li></a>
 			</ul>
+			<a href="<?php echo BASE_URL;?>carrinho">
+			<div class="carrinho">
+				Carinho:<br/>
+				<?php echo (isset($_SESSION['carrinho']))?count($_SESSION['carrinho']):'0'; ?>
+			</div>
+			</a>
 		</div>
 	</div>
 	<div class="container">
