@@ -10,7 +10,7 @@ class produtoController extends controller{
 
 			$produtos = new produtos();
 			$dados['produto'] = $produtos->get_produto($id);
-			if (is_array($dados['produto']) && count($dados['produto'] > 0)) {
+			if (is_array($dados['produto']) && count($dados['produto']) > 0) {
 				$this->loadTemplate('produto', $dados);
 			}else{
 				header("Location /error");

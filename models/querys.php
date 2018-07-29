@@ -1,5 +1,5 @@
 <?php
-class Querys extends controller{
+class querys extends model{
 
 	public function listCatego(){
 		$sql = "SELECT * FROM categorias";

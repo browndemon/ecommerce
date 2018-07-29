@@ -1,6 +1,4 @@
 <?php
-include '/functions/querysController.php';
-
 class controller{
 
 	protected $db;
@@ -19,7 +17,7 @@ class controller{
 	}
 
 	public function loadTemplate($viewName, $viewData = array()){
-		$querys = new Querys();
+		$querys = new querys();
 		$menu = $querys->listCatego();
 		require 'views/template.php';
 	}
