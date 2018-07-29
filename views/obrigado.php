@@ -1,0 +1,1 @@
+<h2>Obrigado pela compra!</h2>

@@ -98,3 +98,10 @@ body{
 	float: right;
 	margin-top: -50px;
 }
+
+.erro{
+	padding: 15px;
+	border:  1px solid #000;
+	background: #eee;
+	margin-bottom: 10px;
+}
